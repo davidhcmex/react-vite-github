@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(import.meta.env.VITE_APP_API_URL + '/cities_info')
+    fetch('https://meaningful-761458183661.us-central1.run.app/cities_info')
       .then((response) => response.json())
       .then((data) => {
         setData(data)
