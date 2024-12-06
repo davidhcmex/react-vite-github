@@ -1,0 +1,8 @@
+runtime: custom
+handlers:
+  - url: /(.*)\.(css|js|png|jpg|jpeg|gif|svg|html|json)$
+    static_files: dist/\1
+    upload: dist/\1
+  - url: /.*
+    static_files: dist/index.html
+    upload: dist/index.html
